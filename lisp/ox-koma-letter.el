@@ -504,6 +504,9 @@ e.g. \"title-subject:t\"."
     (:opening "OPENING" nil org-koma-letter-opening parse)
     (:closing "CLOSING" nil org-koma-letter-closing parse)
     (:signature "SIGNATURE" nil org-koma-letter-signature newline)
+    (:customer "CUSTOMER" nil nil t)
+    (:yourref "YOURREF" nil nil t)
+    (:invoice "INVOICE" nil nil t)
     (:special-headings nil "special-headings" org-koma-letter-prefer-special-headings)
     (:special-tags-as-macro nil nil org-koma-letter-special-tags-as-macro)
     (:special-tags-in-letter nil nil org-koma-letter-special-tags-in-letter)
@@ -869,6 +872,19 @@ a communication channel."
      (and (funcall check-scope 'with-backaddress)
           (format "\\KOMAoption{backaddress}{%s}\n"
                   (if (plist-get info :with-backaddress) "true" "false")))
+
+     ;; Customer
+     (when (plist-get info :customer) 
+       (format "\\setkomavar{customer}{%s}\n" (plist-get info :customer)))
+
+     ;; Yourref
+     (when (plist-get info :yourref) 
+       (format "\\setkomavar{yourref}{%s}\n" (plist-get info :yourref)))
+
+     ;; Invoice
+     (when (plist-get info :invoice) 
+       (format "\\setkomavar{invoice}{%s}\n" (plist-get info :invoice)))
+
      ;; Place.
      (let ((with-place-set (funcall check-scope 'with-place))
            (place-set (funcall check-scope 'place)))
