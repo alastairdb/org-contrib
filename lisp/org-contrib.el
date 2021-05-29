@@ -1,11 +1,11 @@
-;;; org-contrib.el --- Add-ons that are no longer distributed with Org-mode
+;;; org-contrib.el --- Unmaintained add-ons for Org-mode
 
 ;; Copyright (C) 2021 Bastien Guerry
 
 ;; Author: Bastien Guerry <bzg@gnu.org>
 ;; Homepage: https://git.sr.ht/~bzg/org-contrib
 ;; Package-Requires: ((emacs "25.1") (org "9.4.5"))
-;; Package-Version: 0.1
+;; Version: 0.1
 ;; Keywords: org
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
