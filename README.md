@@ -40,6 +40,17 @@ find after the "Homepage:" keyword in the files themselves:
 -   **ob-julia.el:** org-babel functions for julia code evaluation
 -   **org-notify.el:** Notifications for Org-mode
 -   **org-mac-link.el:** Insert org-mode links to items selected in various Mac apps
+-   **org-passwords.el:** org derived mode for managing passwords
+-   **ob-php.el:** Execute PHP within org-mode blocks
+-   **ob-redis.el:** Execute Redis queries within org-mode blocks
+-   **ob-arduino.el:** Org-mode Babel support for Arduino
+-   **ob-spice.el:** org-babel functions for spice evaluation
+-   **ob-sclang.el:** SCLang support for Org-mode Babel
+-   **ob-smiles.el:** Org-mode Babel support for SMILES
+-   **ob-clojure-literate.el:** Clojure's Org-mode Literate Programming
+-   **ox-rss.el:** RSS 2.0 Back-End for Org Export Engine
+-   **org-attach-embedded-images.el:** Transmute images to attachments
+-   **org-velocity.el:** something like Notational Velocity for Org
 
 
 # Other files
