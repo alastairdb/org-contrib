@@ -68,6 +68,8 @@
 (require 'org-agenda)
 (require 'org-capture)
 (require 'ol)
+(eval-when-compile
+  (require 'cl-macs))
 
 (defgroup org-contacts nil
   "Options about contacts management."
