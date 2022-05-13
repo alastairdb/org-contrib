@@ -103,12 +103,12 @@ For example, to point to your `obe-bibtex-file' use the following.
 	   (col (k) (mapcar (lambda (r) (cdr (assoc k r))) meta))
 	   (add (lst)
 		(dolist (el lst) (push (cons el counter) nodes))
-		(incf counter)))
+		(cl-incf counter)))
       ;; build the nodes of the graph
       (add (col :title))
-      (add (remove-if (lambda (author) (string-match "others" author))
-		      (remove-duplicates (apply #'append (col :authors))
-					 :test #'string=)))
+      (add (cl-remove-if (lambda (author) (string-match "others" author))
+		         (remove-duplicates (apply #'append (col :authors))
+					    :test #'string=)))
       (dolist (field fields)
 	(add (remove-duplicates (col field) :test #'string=)))
       ;; build the links in the graph

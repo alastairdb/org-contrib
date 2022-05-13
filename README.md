@@ -34,23 +34,23 @@ later version.  See [COPYING](COPYING).
 These files are maintained in a separate repository, which you can
 find after the "Homepage:" keyword in the files themselves:
 
+-   **ob-arduino.el:** Org-mode Babel support for Arduino
+-   **ob-clojure-literate.el:** Clojure's Org-mode Literate Programming
 -   **ob-mathematica.el:** org-babel functions for Mathematica evaluation
--   **org-link-edit.el:** Slurp and barf with Org links
--   **ol-notmuch.el:** Links to notmuch messages
--   **ob-julia.el:** org-babel functions for julia code evaluation
--   **org-notify.el:** Notifications for Org-mode
--   **org-mac-link.el:** Insert org-mode links to items selected in various Mac apps
--   **org-passwords.el:** org derived mode for managing passwords
 -   **ob-php.el:** Execute PHP within org-mode blocks
 -   **ob-redis.el:** Execute Redis queries within org-mode blocks
--   **ob-arduino.el:** Org-mode Babel support for Arduino
--   **ob-spice.el:** org-babel functions for spice evaluation
 -   **ob-sclang.el:** SCLang support for Org-mode Babel
 -   **ob-smiles.el:** Org-mode Babel support for SMILES
--   **ob-clojure-literate.el:** Clojure's Org-mode Literate Programming
--   **ox-rss.el:** RSS 2.0 Back-End for Org Export Engine
+-   **ob-spice.el:** org-babel functions for spice evaluation
+-   **ol-notmuch.el:** Links to notmuch messages
 -   **org-attach-embedded-images.el:** Transmute images to attachments
+-   **org-contacts.el:** Contacts management
+-   **org-link-edit.el:** Slurp and barf with Org links
+-   **org-mac-link.el:** Insert org-mode links to items selected in various Mac apps
+-   **org-notify.el:** Notifications for Org-mode
+-   **org-passwords.el:** org derived mode for managing passwords
 -   **org-velocity.el:** something like Notational Velocity for Org
+-   **ox-rss.el:** RSS 2.0 Back-End for Org Export Engine
 
 
 # Other files
@@ -64,13 +64,12 @@ find after the "Homepage:" keyword in the files themselves:
 -   **org-checklist.el:** org functions for checklist handling
 -   **org-choose.el:** Use TODO keywords to mark decision states
 -   **org-collector.el:** Collect properties into tables
--   **org-contacts.el:** Contacts management
 -   **org-contribdir.el:** Dummy file to mark the org contrib Lisp directory
 -   **org-depend.el:** TODO dependencies for Org-mode
 -   **org-effectiveness.el:** Measuring your personal effectiveness
 -   **org-eldoc.el:** Eldoc documentation for SRC blocks
--   **org-eval-light.el:** Evaluate in-buffer code on demand
 -   **org-eval.el:** The <lisp> tag, adapted from Muse
+-   **org-eval-light.el:** Evaluate in-buffer code on demand
 -   **org-expiry.el:** Expiry mechanism for Org entries
 -   **org-git-link.el:** Provide org links to specific file version
 -   **org-interactive-query.el:** Interactive modification of tags query
@@ -104,7 +103,6 @@ find after the "Homepage:" keyword in the files themselves:
 -   **ox-extra.el:** Convenience functions for org export
 -   **ox-freemind.el:** Freemind exporter
 -   **ox-groff.el:** Groff exporter
--   **ox-koma-letter.el:** KOMA Scrlttr2 exporter
 -   **ox-rss.el:** RSS 2.0 exporter
 -   **ox-s5.el:** S5 presentations exporter
 -   **ox-taskjuggler.el:** TaskJuggler exporter
@@ -115,7 +113,6 @@ find after the "Homepage:" keyword in the files themselves:
 -   **ol-bookmark.el:** Links to bookmarks
 -   **ol-elisp-symbol.el:** Links to Emacs-lisp symbols
 -   **ol-git-link.el:** Links to specific file version
--   **ol-man.el:** Links to man pages
 -   **ol-mew.el:** Links to Mew messages
 -   **ol-notmuch.el:** Links to notmuch messages
 -   **ol-vm.el:** Support for links to VM messages
@@ -124,21 +121,33 @@ find after the "Homepage:" keyword in the files themselves:
 
 ## Org Babel languages
 
--   **ob-arduino.el:** Org-mode Babel support for Arduino
+-   **ob-abc.el:** Org-mode Babel Functions for ABC
+-   **ob-arduino.el:** Org-mode Babel Functions for Arduino
+-   **ob-asymptote.el:** Org-mode Babel Functions for Asymptote
 -   **ob-clojure-literate.el:** Clojure's Org-mode Literate Programming
--   **ob-csharp.el:** org-babel functions for csharp evaluation
--   **ob-eukleides.el:** Org-babel functions for eukleides evaluation
--   **ob-fomus.el:** Org-babel functions for fomus evaluation
--   **ob-julia.el:** Org-babel functions for julia evaluation
--   **ob-mathematica.el:** org-babel functions for Mathematica evaluation
--   **ob-mathomatic.el:** Org-babel functions for mathomatic evaluation
--   **ob-oz.el:** Org-babel functions for Oz evaluation
+-   **ob-coq.el:** Org-mode Babel Functions for Coq
+-   **ob-csharp.el:** Org-mode Babel Functions for csharp evaluation
+-   **ob-ebnf.el:** Org-mode Babel Functions for EBNF
+-   **ob-eukleides.el:** Org-mode Babel Functions for eukleides evaluation
+-   **ob-fomus.el:** Org-mode Babel Functions for fomus evaluation
+-   **ob-hledger.el:** Org-mode Babel Functions for hledger
+-   **ob-io.el:** Org-mode Babel Functions for Io
+-   **ob-J.el:** Org-mode Babel Functions for J
+-   **ob-ledger.el:** Org-mode Babel Functions for Ledger
+-   **ob-mathematica.el:** Org-mode Babel Functions for Mathematica evaluation
+-   **ob-mathomatic.el:** Org-mode Babel Functions for mathomatic evaluation
+-   **ob-mscgen.el:** Org-mode Babel Functions for Mscgen
+-   **ob-oz.el:** Org-mode Babel Functions for Oz evaluation
 -   **ob-php.el:** Execute PHP within org-mode blocks
+-   **ob-picolisp.el:** Org-mode Babel Functions for Picolisp
 -   **ob-redis.el:** Execute Redis queries within org-mode blocks
 -   **ob-sclang.el:** SCLang support for Org-mode Babel
+-   **ob-shen.el:** Org-mode Babel Functions for Shen
 -   **ob-smiles.el:** Org-mode Babel support for SMILES
--   **ob-spice.el:** org-babel functions for spice evaluation
--   **ob-stata.el:** Org-babel functions for Stata evaluation
--   **ob-tcl.el:** Org-babel functions for tcl evaluation
--   **ob-vbnet.el:** org-babel functions for VB.Net evaluation
+-   **ob-spice.el:** Org-mode Babel Functions for spice evaluation
+-   **ob-stan.el:** Babel Functions for Stan
+-   **ob-stata.el:** Org-mode Babel Functions for Stata evaluation
+-   **ob-tcl.el:** Org-mode Babel Functions for tcl evaluation
+-   **ob-vala.el:** Org-mode Babel Functions for Vala
+-   **ob-vbnet.el:** Org-mode Babel Functions for VB.Net evaluation
 

@@ -5,6 +5,7 @@
 ;; Author: Julien Danjou <julien@danjou.info>
 ;; Maintainer: stardiviner <numbchild@gmail.com>
 ;; Keywords: outlines, hypermedia, calendar
+;; Homepage: https://repo.or.cz/org-contacts.git
 ;;
 ;; This file is not part of GNU Emacs.
 ;;
